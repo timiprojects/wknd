@@ -1,12 +1,61 @@
 <ion-header>
+  <ion-grid class="grid-top">
+    <div class="grid-row">
+      <ion-buttons>
+        <ion-button>
+          <ion-icon slot="icon-only" name="menu"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <div class="_container">
+        <ion-avatar>
+          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+        </ion-avatar>
+        <ion-text color="light">
+          <h5>Micheal Angelo</h5>
+        </ion-text>
+      </div>
+      <ion-buttons>
+        <ion-button>
+          <ion-icon slot="icon-only" name="settings"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </div>
+  </ion-grid>
   <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+    <ion-segment scrollable>
+      <ion-segment-button>
+        <ion-tab-button tab="settings">
+          <ion-label>Settings</ion-label>
+          <ion-icon name="settings"></ion-icon>
+        </ion-tab-button>
+      </ion-segment-button>
+      <ion-segment-button>
+        <ion-tab-button tab="settings">
+          <ion-label>Settings</ion-label>
+          <ion-icon name="settings"></ion-icon>
+        </ion-tab-button>
+      </ion-segment-button>
+      <ion-segment-button>
+        <ion-tab-button tab="settings">
+          <ion-label>Settings</ion-label>
+          <ion-icon name="settings"></ion-icon>
+        </ion-tab-button>
+      </ion-segment-button>
+    </ion-segment>
   </ion-toolbar>
 </ion-header>
-
 <ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+
+  <ion-progress-bar color="primary" value="0.5"></ion-progress-bar>
+  <ion-list>
+      <ion-item>
+        <ion-label>Note (End)</ion-label>
+        <ion-note slot="end">On</ion-note>
+      </ion-item>
+    
+      <ion-item>
+        <ion-note slot="start">Off</ion-note>
+        <ion-label>Note (Start)</ion-label>
+      </ion-item>
+    </ion-list>
 </ion-content>
